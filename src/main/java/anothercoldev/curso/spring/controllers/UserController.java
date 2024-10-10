@@ -22,7 +22,7 @@ public class UserController {
         return "details";
     }
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public String list(ModelMap model) {
         model.addAttribute("title", "Listado de usuarios con thymeleaf");
         return "list";
